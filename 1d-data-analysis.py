@@ -1,7 +1,9 @@
+#########################
+#Author : Abhishek Sharma
+#########################
 import os
 import numpy as np 
 from matplotlib.lines import Line2D
-# import sklearn.datasets
 import matplotlib.pyplot as plt
 from neuralnet import NeuralNet
 import imageio

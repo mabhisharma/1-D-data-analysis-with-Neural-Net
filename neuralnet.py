@@ -1,6 +1,7 @@
-import numpy as np 
-import sklearn.datasets
-
+#########################
+#Author : Abhishek Sharma
+#########################
+import numpy as np
 
 class NeuralNet(object):
 	"""docstring for NeuralNet"""
@@ -121,19 +122,3 @@ class NeuralNet(object):
 		self.feedForward(X)
 		predictions = (self.A[self.numberOfLayers] > 0.5)
 		return predictions
-
-
-def main():
-	np.random.seed(3)
-	X, Y = sklearn.datasets.make_circles(n_samples=200, factor=.5, noise=0)
-	X, Y = X.T, Y.reshape(1, Y.shape[0])
-	print(Y.shape[1])
-	n = NeuralNet(2,[ 2, 3, 1])
-	# n.feedForward(X)
-	n.gradientDescent(X, 10000, 1.2, Y)
-	print(n.parameters)
-
-	print(n.predict(X)*Y)
-
-if __name__ == '__main__':
-	main()
