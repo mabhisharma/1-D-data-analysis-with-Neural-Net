@@ -1,5 +1,5 @@
 # 1-D data analysis with Neural-Net
-Analysis of how Neural Networks transform the data so that non linear classification boundary can be learned
+This is analysis of how Neural Networks transform the data so that non linear classification boundary can be learned. This is just an overview of how it happens with the help of some plots. 
 
 <p>To get a better sense of what’s going on, let’s consider an dataset that’s 1-dimensional: </p>
 <p>Class A - [-1/3, 1/3]</p>
