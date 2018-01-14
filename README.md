@@ -16,5 +16,5 @@ The representation of the data can be shown as follows -
 # Network Details
 <p> In order to classify this particular data we will require minimum 2 hidden units in the hidden layer. So our network becomes</br> Input layer which is one dimensional, Hidden layer with 2 units and Output layer which outputs 0 or 1 classifing the data into Class A or Class B. The activation function we will use in the hidden layer is Tanh and activation function used in the output layer is sigmoid because we want to classify input as 0 and 1. Also to understand what this neural network is doing we will simply store the output from hidden layer. We will use gradient descent procedure to optimize the weights and bias vectors. Now as the hidden layer has 2 units, the input has transformed into 2 dimensional data and which we store output in every gradient descent step. We also store the weights and bias vectors of layer 2. Now see the diagram for the neural network below</p>
 <p align="center">
-  <img src="/Plots/1-D-NN.png" alt="Neural Network for 2 class problem" height="300" width="400" />
+  <img src="/Plots/1-D-NN.PNG" alt="Neural Network for 2 class problem" height="150" width="200" />
 </p>
