@@ -1,4 +1,4 @@
-# 1-D-data-analysis-with-Neural-Net
+# 1-D data analysis with Neural-Net
 Analysis of how Neural Networks transform the data so that non linear classification boundary can be learned
 
 <p>To get a better sense of what’s going on, let’s consider an dataset that’s 1-dimensional: </p>
