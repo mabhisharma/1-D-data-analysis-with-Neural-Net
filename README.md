@@ -22,17 +22,16 @@ The representation of the data can be shown as follows -
 <p align="center">
   <img src="/Plots/1-ddata-tranformation.gif" alt="Transformation of 1-D data to 2-D and decision boundary" height="300" width="400" />
 </p>
-<p>The above GIF clearly demonstrates that we are able to find a linear decision boundary in this 2 dimensional data (hidden layer output). The original data which was one dimensional was projected to the 2-D space using 2 units in the hidden layer. The original data was not linearly seperable but when we projected 2 dimensional space our data became linearly seperable and this is how the neural network learned to classify a non linearly seperable data. </p>
+<p>The above GIF clearly demonstrates that we are able to find a linear decision boundary in this 2 dimensional data (hidden layer output). The original data which was one dimensional was projected to the 2-D space using 2 units in the hidden layer. The original data was not linearly seperable but when we projected 2 dimensional space our data became linearly seperable and this is how the neural network learned to classify a non linearly seperable data. Detailed explaination is given in the link provided in the reference. 
+</p>
+***
 
-<p>The code for this analysis is my work
 # References -
 http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/
-</p>
-
 
 # Mathematical model for neural net
 For one particular data sample *x*<sup>(*i*)</sup>:
-</br>
+<br>
 *z*<sup>*[1] (i)*</sup> =  *W*<sup>*[1]*</sup> *x*<sup>*(i)*</sup> + *b*<sup>*[1] (i)*</sup>
 </br>
 *a*<sup>*[1] (i)*</sup> = *tanh*(*z*<sup>*[1] (i)*</sup>)
@@ -40,10 +39,3 @@ For one particular data sample *x*<sup>(*i*)</sup>:
 *z*<sup>*[2] (i)*</sup> = *W*<sup>*[2]*</sup> *a*<sup>*[1] (i)*</sup> + *b*<sup>*[2] (i)*</sup>
 </br>
 *y*<sup>*(i)*</sup> = *a*<sup>*[2] (i)*</sup> = σ(*z*<sup>*[2] (i)*</sup>)
-</br>
-Given the predictions on all the examples, you can also compute the cost
-*J* as follows:
-\[J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large\left(\small y^{(i)}\log\left(a^{[2] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[2] (i)}\right)  \large  \right) \small \tag{6}\]
-
-
-
