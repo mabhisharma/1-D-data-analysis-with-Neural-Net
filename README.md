@@ -35,11 +35,11 @@ For one particular data sample *x*<sup>(*i*)</sup>:
 </br>
 *z*<sup>*[1] (i)*</sup> =  *W*<sup>*[1]*</sup> *x*<sup>*(i)*</sup> + *b*<sup>*[1] (i)*</sup>
 </br>
-*a*<sup>*[1] (i)*</sup> = *tanh*(*z*<sup>*[1](i)*</sup>)
+*a*<sup>*[1] (i)*</sup> = *tanh*(*z*<sup>*[1] (i)*</sup>)
 </br>
 *z*<sup>*[2] (i)*</sup> = *W*<sup>*[2]*</sup> *a*<sup>*[1] (i)*</sup> + *b*<sup>*[2] (i)*</sup>
 </br>
-*y*<sup>*(i)*</sup> = *a*<sup>*[2] (i)*</sup> = \sigma(*z*<sup>*[2] (i)*</sup>)
+*y*<sup>*(i)*</sup> = *a*<sup>*[2] (i)*</sup> = σ(*z*<sup>*[2] (i)*</sup>)
 </br>
 Given the predictions on all the examples, you can also compute the cost
 *J* as follows:
