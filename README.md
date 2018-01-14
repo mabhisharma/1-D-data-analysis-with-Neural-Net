@@ -24,5 +24,20 @@ The representation of the data can be shown as follows -
 </p>
 <p>The above GIF clearly demonstrates that we are able to find a linear decision boundary in this 2 dimensional data (hidden layer output). The original data which was one dimensional was projected to the 2-D space using 2 units in the hidden layer. The original data was not linearly seperable but when we projected 2 dimensional space our data became linearly seperable and this is how the neural network learned to classify a non linearly seperable data. </p>
 
+<p>The code for this analysis is my work
 # References -
 http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/
+</p>
+
+
+# Mathematical model for neural net
+For one example \(x^{(i)}\):
+\[z^{[1] (i)} =  W^{[1]} x^{(i)} + b^{[1] (i)}\tag{1}\]
+\[a^{[1] (i)} = \tanh(z^{[1] (i)})\tag{2}\]
+\[z^{[2] (i)} = W^{[2]} a^{[1] (i)} + b^{[2] (i)}\tag{3}\]
+\[\hat{y}^{(i)} = a^{[2] (i)} = \sigma(z^{ [2] (i)})\tag{4}\]
+\[y^{(i)}_{prediction} = \begin{cases} 1 & \mbox{if } a^{[2](i)} > 0.5 \\ 0 & \mbox{otherwise } \end{cases}\tag{5}\]
+
+Given the predictions on all the examples, you can also compute the cost
+\(J\) as follows:
+\[J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large\left(\small y^{(i)}\log\left(a^{[2] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[2] (i)}\right)  \large  \right) \small \tag{6}\]
